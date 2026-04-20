@@ -16,7 +16,7 @@ from huggingface_hub import login
 login()
 
 import os
-os.environ["HF_TOKEN"] = "***"
+os.environ["HF_TOKEN"] = "***:))"
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -31,7 +31,7 @@ def chunk_text(text, chunk_size=300, overlap=5):
         chunks.append(chunk)
     return chunks
 
-os.environ["TELEGRAM_TOKEN"] = "***"
+os.environ["TELEGRAM_TOKEN"] = "***:))"
 CSV_FILE_PATH = os.environ.get("CSV_FILE_PATH", "messages.csv")
 
 with open("/content/tabular_data.txt", "r", encoding="utf-8") as f:
